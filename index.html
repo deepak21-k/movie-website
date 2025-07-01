@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Popcorn Movies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Popcorn Movies</h1>
+  <form id="search-form">
+    <input type="text" id="search-input" placeholder="Search movies..." autocomplete="off">
+    <button type="submit">Search</button>
+  </form>
+  <div id="main-container"></div>
+  <div id="pagination-controls">
+    <button id="prev-btn" disabled>Previous</button>
+    <span id="page-info"></span>
+    <button id="next-btn" disabled>Next</button>
+  </div>
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <img id="modal-poster" alt="Movie Poster">
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+      <div id="modal-cast"></div>
+    </div>
+  </div>
+  <div id="spinner" class="spinner hidden"></div>
+  <script src="script.js"></script>
+</body>
+</html>
+
